@@ -311,7 +311,7 @@ static dispatch_once_t sharedDispatchToken;
     const NSInteger kPINRemoteImageDiskCacheVersion = 1;
     NSUserDefaults *pinDefaults = [[NSUserDefaults alloc] init];
     
-    NSString *cacheURLRoot = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *cacheURLRoot = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     
     if ([pinDefaults integerForKey:kPINRemoteImageDiskCacheVersionKey] != kPINRemoteImageDiskCacheVersion) {
         //remove the old version of the disk cache

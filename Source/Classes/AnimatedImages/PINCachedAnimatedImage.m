@@ -13,9 +13,12 @@
 #if PIN_WEBP
 #import "PINWebPAnimatedImage.h"
 #endif
+#if PIN_APNG
+#import "PINAPNGAnimatedImage.h"
+#endif
 
-#if SWIFT_PACKAGE
-@import PINOperation;
+#if !__has_include(<PINOperation/PINOperation.h>)
+#import "PINOperation.h"
 #else
 #import <PINOperation/PINOperation.h>
 #endif
@@ -70,6 +73,11 @@ static const CFTimeInterval kSecondsBetweenMemoryWarnings = 15;
 #if PIN_WEBP
     if ([animatedImageData pin_isAnimatedWebP]) {
         return [self initWithAnimatedImage:[[PINWebPAnimatedImage alloc] initWithAnimatedImageData:animatedImageData]];
+    }
+#endif
+#if PIN_APNG
+    if ([animatedImageData pin_isAPNG]) {
+        return [self initWithAnimatedImage:[[PINAPNGAnimatedImage alloc] initWithAnimatedImageData:animatedImageData]];
     }
 #endif
     return nil;

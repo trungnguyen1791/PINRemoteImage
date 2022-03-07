@@ -71,7 +71,8 @@ typedef NS_OPTIONS(NSUInteger, PINRemoteImageManagerDownloadOptions) {
      * future this could be improved with revalidation behavior that stores ETag or Last-Modified
      * values and only makes HEAD requests to see if these headers are unchanged.
      * see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control and
-     * https://tools.ietf.org/html/rfc7234*/
+     * https://tools.ietf.org/html/rfc7234
+     */
     PINRemoteImageManagerDownloadOptionsIgnoreCacheControlHeaders = 1 << 6
 };
 
@@ -261,6 +262,15 @@ typedef void(^PINRemoteImageManagerMetrics)(NSURL  * __nonnull url, NSURLSession
  @param configurationBlock A PINRemoteImageManagerRequestConfigurationHandler block.
  */
 - (void)setRequestConfiguration:(nullable PINRemoteImageManagerRequestConfigurationHandler)configurationBlock;
+
+/**
+ Sets the Request Configuration Block.
+
+ @param configurationBlock A PINRemoteImageManagerRequestConfigurationHandler block.
+ @param completion Completion to be called once configurationBlock has been set.
+ */
+- (void)setRequestConfiguration:(nullable PINRemoteImageManagerRequestConfigurationHandler)configurationBlock
+                     completion:(void (^_Nullable)(void))completion;
 
 /**
  Set the Authentication Challenge Block.

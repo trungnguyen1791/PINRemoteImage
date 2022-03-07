@@ -12,18 +12,13 @@
 
 #import "NSData+ImageDetectors.h"
 
-#if SWIFT_PACKAGE
-@import libwebp;
-#else
 #import "webp/demux.h"
-#endif
 
 @interface PINWebPAnimatedImage ()
 {
     NSData *_animatedImageData;
     WebPData _underlyingData;
     WebPDemuxer *_demux;
-    CGImageRef previousFrame;
     uint32_t _width;
     uint32_t _height;
     BOOL _hasAlpha;

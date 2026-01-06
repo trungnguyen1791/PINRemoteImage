@@ -139,9 +139,9 @@
 		68F0EA951CB32EC900F1FD41 /* PINRemoteImageMemoryContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F0EA911CB32EC900F1FD41 /* PINRemoteImageMemoryContainer.m */; };
 		84CA25F929FB269F0038CFA1 /* PINRemoteImageManager+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 680B83C71ECE5F9D00210A55 /* PINRemoteImageManager+Private.h */; };
 		926E01641F0DFEE800874D01 /* PINRequestRetryStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 926E015D1F0DFCAE00874D01 /* PINRequestRetryStrategy.m */; };
-		938E98D52224775600029E4D /* PINRemoteImageManagerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 939546BE2220AF84006031BB /* PINRemoteImageManagerConfiguration.h */; };
+		938E98D52224775600029E4D /* PINRemoteImageManagerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 939546BE2220AF84006031BB /* PINRemoteImageManagerConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		938E98DA2224775B00029E4D /* PINRemoteImageManagerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 939546BF2220AF84006031BB /* PINRemoteImageManagerConfiguration.m */; };
-		939546C02220AF84006031BB /* PINRemoteImageManagerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 939546BE2220AF84006031BB /* PINRemoteImageManagerConfiguration.h */; };
+		939546C02220AF84006031BB /* PINRemoteImageManagerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 939546BE2220AF84006031BB /* PINRemoteImageManagerConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		939546C12220AF84006031BB /* PINRemoteImageManagerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 939546BF2220AF84006031BB /* PINRemoteImageManagerConfiguration.m */; };
 		9DD47F9D1C699F4B00F12CA0 /* PINButton+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD47F991C699F4B00F12CA0 /* PINButton+PINRemoteImage.m */; };
 		9DD47F9F1C699F4B00F12CA0 /* PINImageView+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD47F9B1C699F4B00F12CA0 /* PINImageView+PINRemoteImage.m */; };
@@ -368,6 +368,7 @@
 				445C571D2BF26B6A0005D70F /* PINURLSessionManager.h */,
 				445C571E2BF26B6A0005D70F /* PINWebPAnimatedImage.h */,
 				447F707C2BF4FD1300C5C956 /* NSHTTPURLResponse+MaxAge.h */,
+				939546BE2220AF84006031BB /* PINRemoteImageManagerConfiguration.h */,
 				447F707D2BF4FD1300C5C956 /* PINImage+DecodedImage.h */,
 				447F707B2BF4FD1300C5C956 /* PINImage+ScaledImage.h */,
 			);
@@ -469,7 +470,6 @@
 				F1B918EE1BCF23C800710963 /* PINProgressiveImage.m */,
 				F1B918DC1BCF23C800710963 /* PINRemoteImageCategoryManager.m */,
 				F1B918F61BCF23C800710963 /* PINRemoteImageManager.m */,
-				939546BE2220AF84006031BB /* PINRemoteImageManagerConfiguration.h */,
 				939546BF2220AF84006031BB /* PINRemoteImageManagerConfiguration.m */,
 				F1B918F81BCF23C800710963 /* PINRemoteImageManagerResult.m */,
 				F1B918FE1BCF23C900710963 /* PINURLSessionManager.m */,

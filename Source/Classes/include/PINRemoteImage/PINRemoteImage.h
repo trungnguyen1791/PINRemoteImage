@@ -32,3 +32,4 @@
 #import <PINRemoteImage/PINImage+ScaledImage.h>
 #import <PINRemoteImage/NSHTTPURLResponse+MaxAge.h>
 #import <PINRemoteImage/PINRemoteImageDataConvertible.h>
+#import <PINRemoteImage/PINRemoteImageManagerConfiguration.h>

@@ -19,7 +19,7 @@
 #import <objc/runtime.h>
 
 #import <PINRemoteImage/PINAlternateRepresentationProvider.h>
-#import "PINRemoteImageManagerConfiguration.h"
+#import <PINRemoteImage/PINRemoteImageManagerConfiguration.h>
 #import "PINRemoteLock.h"
 #import <PINRemoteImage/PINProgressiveImage.h>
 #import "PINRemoteImageCallbacks.h"

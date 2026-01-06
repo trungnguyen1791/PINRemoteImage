@@ -1,5 +1,5 @@
-PLATFORM="platform=iOS Simulator,name=iPhone 15"
-SDK="iphonesimulator"
+PLATFORM="platform=iOS Simulator,name=iPhone 16,OS=18.5"
+SDK="iphonesimulator18.5"
 SHELL=/bin/bash -o pipefail
 XCODE_MAJOR_VERSION=$(shell xcodebuild -version | HEAD -n 1 | sed -E 's/Xcode ([0-9]+).*/\1/')
 IOS_EXAMPLE_PROJECT="Examples/Example-Xcode-SPM/Example-Xcode-SPM.xcodeproj"
@@ -30,8 +30,8 @@ spm:
 	swift build
 
 example:
-	if [ ${XCODE_MAJOR_VERSION} -lt 15 ] ; then \
-		echo "Xcode 15 and Swift 5.9 reqiured to build example project"; \
+	if [ ${XCODE_MAJOR_VERSION} -lt 16 ] ; then \
+		echo "Xcode 16 and Swift 5.9 required to build example project"; \
 		exit 1; \
 	fi
 	xcodebuild clean build -project ${IOS_EXAMPLE_PROJECT} -scheme ${EXAMPLE_SCHEME} -destination ${PLATFORM} -sdk ${SDK} \

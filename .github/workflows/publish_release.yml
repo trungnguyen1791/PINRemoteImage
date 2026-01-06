@@ -8,7 +8,7 @@ on:
 
 env:
   # Use Xcode 15.2 or newer to support VisionOS
-  DEVELOPER_DIR: /Applications/Xcode_15.2.app
+  DEVELOPER_DIR: /Applications/Xcode_16.4.app
 
 jobs:
   create_release:

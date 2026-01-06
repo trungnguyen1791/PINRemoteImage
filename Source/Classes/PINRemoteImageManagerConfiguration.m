@@ -6,8 +6,7 @@
 //
 //
 
-#import "PINRemoteImageManagerConfiguration.h"
-
+#import <PINRemoteImage/PINRemoteImageManagerConfiguration.h>
 #import <PINRemoteImage/PINRemoteImageManager.h>
 
 @implementation PINRemoteImageManagerConfiguration

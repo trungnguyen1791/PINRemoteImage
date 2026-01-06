@@ -15,6 +15,12 @@ env:
   DEVELOPER_DIR: /Applications/Xcode_16.2.app
 
 jobs:
+  debuggithub:
+    name: Debug Github
+    runs-on: macos-latest
+    steps:
+      - name: List available simulators (debug)
+        run: xcrun simctl list devices
   analyze:
     name: Analyze
     runs-on: macos-latest

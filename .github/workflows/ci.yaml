@@ -21,6 +21,10 @@ jobs:
     steps:
       - name: List available simulators (debug)
         run: xcrun simctl list devices
+      - name: List available Runtimes (debug)
+        run: xcrun simctl list runtimes
+      - name: List available SDKs (debug)
+        run: xcodebuild -showsdks
   analyze:
     name: Analyze
     runs-on: macos-latest

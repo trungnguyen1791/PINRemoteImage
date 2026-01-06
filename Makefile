@@ -1,5 +1,5 @@
 PLATFORM="platform=iOS Simulator,name=iPhone 16"
-SDK="iphonesimulator"
+SDK="iphonesimulator18.2"
 SHELL=/bin/bash -o pipefail
 XCODE_MAJOR_VERSION=$(shell xcodebuild -version | HEAD -n 1 | sed -E 's/Xcode ([0-9]+).*/\1/')
 IOS_EXAMPLE_PROJECT="Examples/Example-Xcode-SPM/Example-Xcode-SPM.xcodeproj"
